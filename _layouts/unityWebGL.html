@@ -14,7 +14,7 @@ layout: post
 
 {{content}}
 
-<script src="/assets/js/UnityProgress.js"></script>
+<script src="assets/js/UnityProgress.js"></script>
 <script src="{{page.buildAssetPath}}Build/UnityLoader.js"></script>
 <script>
   var gameInstance = UnityLoader.instantiate("gameContainer", "{{page.buildAssetPath}}Build/{{page.algorithm}}.json", {onProgress: UnityProgress});
