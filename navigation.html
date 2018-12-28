@@ -7,15 +7,15 @@ layout: default
 <div>
 {% if site.data.navigation.toc.chapters[0] %}
   {% for chapter in site.data.navigation.toc.chapters %}
-    <h3><a href="{{site.baseurl}}/{{chapter.url}}">{{ chapter.title }}</a></h3>
+    <h3><a href="/{{site.baseurl}}/{{chapter.url}}">{{ chapter.title }}</a></h3>
       {% if chapter.sections[0] %}
         <ul>
           {% for section in chapter.sections %}
-              <li><a href="{{site.baseurl}}/{{chapter.url}}{{ section.url }}.html">{{ section.title }}</a>
+              <li><a href="/{{site.baseurl}}/{{chapter.url}}{{ section.url }}.html">{{ section.title }}</a>
                 {% if section.subsubsections[0] %}
                   <ul>
                   {% for subsubsection in section.subsubsections %}
-                      <li><a href="{{site.baseurl}}/{{chapter.url}}{{ section.url }}{{ subsubsection.url }}.html">{{ subsubsection.title }}</a></li>
+                      <li><a href="/{{site.baseurl}}/{{chapter.url}}{{ section.url }}{{ subsubsection.url }}.html">{{ subsubsection.title }}</a></li>
                   {% endfor %}
                   </ul>
                 {% endif %}
