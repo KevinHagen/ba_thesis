@@ -1,0 +1,98 @@
+{
+    toc:
+    {
+        chapters: [
+            {
+                "title": "Home",
+                "url": "",
+            },
+            {
+                title: "About",
+                url: "about/",
+            },      
+            {
+                title: "PCGDemos",
+                url: "pcgdemos",
+                sections: [
+                    {title: "CA Demo", url: "/ca-demo"},
+                    {title: "DW Demo", url: "/dw-demo"},
+                    {title: "PN Demo", url: "/pn-demo"},
+                ]    
+            },
+            {
+                title: "Thesis",
+                url: "thesis",
+            },
+            {
+                title: "Preface",
+                url: "preface",
+                sections: [                    
+                    {title: "Motivation", url: "/motivation"},
+                    {title: "Structure", url: "/structure"},
+                ]
+            },
+            {
+                title: "Introduction to procedural content generation",
+                url: "/introduction-pcg",
+                sections: [
+                    {title: "Wording and definition", url: "/definition-pcg"},
+                    {title: "Rogue and its influences on PCG", url: "/rogue-pcg", subsubsections: [
+                            {title: "The new genre: Rogue-like",url: "/rogue-like-genre"}                         
+                    ]},
+                    {title: "Current application areas", url: "/application-areas-pcg", subsubsections: [
+                            {title: "Textures",url: "/textures"},
+                            {title: "Vegetation",url: "/vegetation."},
+                            {title: "Music",url: "/music"},
+                            {title: "Items",url: "/items"},
+                            {title: "Levels & Dungeons",url: "/levels-and-dungeons"},
+                    ]},
+                    {title: "Common techniques", url: "/common-techniques-pcg", subsubsections: [
+                            {title: "Perlin Noise",url: "/perlin-noise"},
+                            {title: "Drunkard's Walk",url: "/drunkards-walk"},
+                            {title: "Cellular Automaton",url: "/cellular-automaton"},
+                    ]},
+                ]
+            },
+            {
+                title: "Synthesis of generated and handcrafted worlds",
+                url: "synthesis-of-generated-and-handcrafted-worlds",
+                sections: [
+                    {title: "Principles of leveldesign", url: "/principles-of-leveldesign", subsubsections: [
+                        {title: "Particularities regarding procedural leveldesign",url: "/particularities"}
+                    ]},
+                    {title: "Synthesis in existing games", url: "/criteria-successful-synthesis", subsubsections: [
+                        {title: "Main criteria",url: "/main-criteria"},
+                        {title: "Secondary criteria",url: "/secondary-criteria"},
+                        {title: "Bad North",url: "/bad-north"},
+                    ]},
+                    {title: "Criteria for a succesful synthesis", url: "/synthesis-in-existing-games", subsubsections: [
+                        {title: "Spelunky",url: "/spelunky"},
+                        {title: "Cogmind",url: "/cogmind"},
+                        {title: "What the generator is not supposed to be",url: "/the-generator-is-not"},
+                    ]},
+                ]
+            },
+            {
+                title: "WaveFunctionCollapse",
+                url: "wfc",
+            },
+            {
+                title: "Implementation",
+                url: "/impl",
+            },
+            {
+                title: "Résumé",
+                url: "/resume",
+                sections: [
+                    {title: "Implementation vs. Concept", url: "/impl-vs-concept"},
+                    {title: "Future works", url: "/future-works"},
+                    {title: "Conclusion", url: "/conclusion"},
+                ]
+            },
+            {
+                title: "Listings",
+                url: "/listings",
+            }
+        ],
+    }
+}

@@ -13,3 +13,7 @@ If you prefer reading a .pdf file, feel free to download one of the following:
 - [German version](https://github.com/KevinHagen/KHollapse/)
 
 To view the source code of the demos browse this [repository](https://github.com/KevinHagen/KHollapse/). You can find the source code of each demo there, but there is also going to be a link to a demos specific code on its own page, so you don't have to come back here if you want to look at e.g. the code for CA.
+
+Temporary navigation until there is a real one:
+
+[PCG Demos](pcgdemos/)

@@ -1,0 +1,56 @@
+{
+    "base":
+    {
+        "Width": "Width of the generated map",
+        "Height": "Height of the generated map",
+        "Seed": "Seed used for the prng",
+        "UseSeed": "If checked, the seed from the input is used, else one is randomly generated",
+        "Visualization": "Show generation process",
+        "StepTime": "Time between each step",
+    },
+    "dw": 
+    {
+        "StepScheme": "Movement method and grid-layout",
+        "CarveRate": "How much % of the dungeon is supposed to be carved",
+        "StartInCenter": "Spawn first walker in center or on a random position",
+        "BiasTowardsPrevDir": "Whether or not to bias towards the previous direction",
+        "PreviousDirBias": "Chance in % to walk into the previous direction again",
+        "DecayRate": "PreviousDirBias decreases by this, each time the walker walks into previous direction",
+        "RoomSpawnrate": "Chance in % to spawn a room (for each walker)",
+        "MaxWalkers": "How many walkers can concurrently work in the dungeon",
+        "WalkerSpawnrate": "Chance for each walker to spawn a new one",
+        "IsRoomieChance": "Chance for a walker to be able to spawn rooms",
+        "EnableLF": "Toggles Levy Flight",
+        "Chance": "Chance for a walker to execute a LF",
+        "MaxStep": "Maximum stepLength to be taken when executing a LF",
+        "RoomWidth": "Width of a room",
+        "RoomHeight": "Height of a room",
+        "Probability": "Probability for this room"        
+    },
+    "ca":
+    {
+        "Generations": "Executes the CA until the given Generation",
+        "StartAliveChance": "Chance in % whether a cell starts dead/alive",
+        "CurrentGeneration": "Renders this generations cell states to the scene",
+        "StartBirthLimit": "Limit at which cells get born",
+        "EndBirthLimit": "Limit at which cells stop being born",
+        "StarvationLimit": "If less cells are alive in the neighbourhood, the cell dies",
+        "OverpopThreshold": "If more cells are alive in the neighbourhood, the cell dies",
+        "Neighbourhood": "The neighbourhood used to populate the next cell states",
+        "NeighbourCount": "Amount of neighbours each cell has in the current neighbourhood"
+    },
+    "pn":
+    {
+        "MaxHeight": "Maximum height of the noise map",
+        "NoiseScale": "Zoomfactor on the noisemap",
+        "OffsetVector": "2D Offset vector to scroll over the noise map",
+        "Noise": "Use UnityEngine.Mathf.PerlinNoise or the custom impl. by me",
+        "Interpolant": "Use cubic or quintic interpolant to smoothe the values",
+        "VectorDistribution": "Use the original random distribution or the pre defined one (improved noise)",
+        "UseOctaves": "Toggle processing through octaves",
+        "Octaves": "How many octaves to apply to the noise",
+        "Persistance": "Decreasing factor for the impact in each subsequent octave",
+        "Lacunarity": "Increasing factor for the detail in each subsequent octave",
+        "ShowStep": "Show the noise map at the given octave"
+    }
+}

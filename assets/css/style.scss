@@ -9,7 +9,7 @@ img.GIF
 }
 .container {
   width: 90%;
-  max-width: 1728;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -17,6 +17,7 @@ img.GIF
  * This is taken & modified from Unitys default WebGL Build Template
 */
 
+.game_frame {background-color: #e5e5e5;}
 .webgl-content * {border: 0; margin: 0; padding: 0}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
@@ -29,10 +30,14 @@ img.GIF
 .webgl-content .progress.Dark .empty {background-image: url('../images/unityWebGLTemplate/progressEmpty.Dark.png');}
 .webgl-content .progress.Dark .full {background-image: url('../images/unityWebGLTemplate/progressFull.Dark.png');}
 
-.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;} 
+.webgl-content .footer {padding: 2.5px 0px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;} 
 .webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;} 
 .webgl-content .footer .webgl-logo {background-image: url('../images/unityWebGLTemplate/webgl-logo.png'); width: 204px; float: left;}
-.webgl-content .footer .title {margin-right: 10px; float: right;}
+.webgl-content .footer .title {float: right; color: black; margin-right: 10px}
 .webgl-content .footer .fullscreen {background-image: url('../images/unityWebGLTemplate/fullscreen.png'); width: 38px; float: right;}
 
 // Unity WebGL Template End
+
+//Navigation
+
+//Navigation end

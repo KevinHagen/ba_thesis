@@ -1,20 +1,50 @@
 ---
 layout: post
+tags: false
 ---
 
-<div class="webgl-content">
-  <div id="gameContainer" style="width: 960px; height: 600px"></div>
-  <div class="footer">
-    <div class="webgl-logo"></div>
-    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-    <div class="title">{{page.title}}</div>
-  </div>
+<div class="game_frame" style="width: 960px;">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer" style="width: 960px;">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">{{page.title}}</div>
+      </div>
+    </div>
 </div>
 <br />
 
-{{content}}
+<div>
+    <div class="Instructions" style="width: 45%; float: left">
+        <h2> Base-Parameters </h2>
+        <table>
+            {% for item in site.data.algorithmParams.base %}
+                <tr>
+                    <td style="max-width: 40%">{{item[0]}}</td> <td style="max-width: 40%">{{item[1]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        
+        <h2> Controls </h2>
+        <ul>{{page.controls}}</ul>
+        
+        <h2> Links </h2>
+        Source code: 
+        <br />
+        Thesis chapter: TODO        
+        <br />
+        <br />
+        <br />
+        <a href="/pcgdemos.html">Back to overview</a>   
+    </div>
+    <div class="controls" style="width: 35%; float: left">
+        <h2> {{page.algorithm}}-Parameters </h2>
+        {{content}}
+    </div>
+</div>
 
-<script src="assets/js/UnityProgress.js"></script>
+<script src="../assets/js/UnityProgress.js"></script>
 <script src="{{page.buildAssetPath}}Build/UnityLoader.js"></script>
 <script>
   var gameInstance = UnityLoader.instantiate("gameContainer", "{{page.buildAssetPath}}Build/{{page.algorithm}}.json", {onProgress: UnityProgress});
