@@ -20,9 +20,15 @@ tags: false
         <h2> Base-Parameters </h2>
         <table>
             {% for item in site.data.algorithmParams.base %}
+                {% if page.algorithm != "PN") %}
                 <tr>
                     <td style="max-width: 40%">{{item[0]}}</td> <td style="max-width: 40%">{{item[1]}}</td>
                 </tr>
+                {% elsif ((item[0] != "Visualization" and item[0] != "StepTime")) %}
+                <tr>
+                    <td style="max-width: 40%">{{item[0]}}</td> <td style="max-width: 40%">{{item[1]}}</td>
+                </tr>
+                {% endif %}
             {% endfor %}
         </table>
         
